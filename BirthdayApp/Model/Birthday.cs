@@ -7,13 +7,10 @@ using System.Threading.Tasks;
 namespace BirthdayApp.Model
 {
     public class Birthday
-    {
-       
-
+    {      
         string star = "*";
 
         string bottomStar = "|";
-
 
         public void DrawCake(int age)
         {
@@ -22,15 +19,15 @@ namespace BirthdayApp.Model
                 Console.WriteLine("Możesz już pić alkohol!");
                 Console.WriteLine();
                 star = "%";
+                bottomStar = "!";
             }
-
-        
 
             for (int i = 0; i < age; i++)
             {
                 Console.Write(star);
 
             }
+
             Console.WriteLine();
 
             for (int i = 0; i < age; i++)
