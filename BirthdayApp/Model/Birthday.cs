@@ -17,16 +17,25 @@ namespace BirthdayApp.Model
 
         public void DrawCake(int age)
         {
+            if(age >= 18)
+            {
+                Console.WriteLine("Możesz już pić alkohol!");
+                Console.WriteLine();
+                star = "%";
+            }
+
+        
+
             for (int i = 0; i < age; i++)
             {
-                Console.Write("*");
+                Console.Write(star);
 
             }
             Console.WriteLine();
 
             for (int i = 0; i < age; i++)
             {
-                Console.Write("|");
+                Console.Write(bottomStar);
             }
         }
     }
